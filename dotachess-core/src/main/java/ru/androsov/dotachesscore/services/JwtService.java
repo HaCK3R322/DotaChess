@@ -6,11 +6,11 @@ import org.springframework.stereotype.Service;
 public class JwtService implements ru.androsov.jwt_security_starter.JwtService {
     @Override
     public boolean isValid(String jwt) {
-        return false;
+        return true;
     }
 
     @Override
     public String parseUsername(String jwt) {
-        return "";
+        return "asd";
     }
 }

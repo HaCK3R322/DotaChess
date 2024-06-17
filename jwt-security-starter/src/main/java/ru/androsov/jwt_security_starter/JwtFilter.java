@@ -6,14 +6,18 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.logging.Logger;
 
-@RequiredArgsConstructor
 @Slf4j
+@RequiredArgsConstructor
 public class JwtFilter extends OncePerRequestFilter {
     private final JwtService jwtService;
     private final UserDetailsExtendedService userDetailsExtendedService;
@@ -25,6 +29,7 @@ public class JwtFilter extends OncePerRequestFilter {
         String requestUri = request.getRequestURI();
 
         String token = request.getHeader("Authorization");
+        log.info("GOT REQUEST!!!");
 
         if (token != null && token.startsWith("Bearer ")) {
             String jwt = token.substring(7);
@@ -43,8 +48,6 @@ public class JwtFilter extends OncePerRequestFilter {
                 authentication.setDetails(user.getDetails());
 
                 SecurityContextHolder.getContext().setAuthentication(authentication);
-
-                log.info(STR."User \{authentication} request to \{requestUri} authenticated successfully.");
 
                 chain.doFilter(request, response);
                 return;
