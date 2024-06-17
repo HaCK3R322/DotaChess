@@ -28,6 +28,11 @@ import org.springframework.security.web.savedrequest.RequestCacheAwareFilter;
 public class JwtSecurityAutoConfiguration {
     private final JwtFilter jwtFilter;
 
+    @PostConstruct
+    public void init() {
+        log.info("XDXDXD");
+    }
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         log.info("Configuring security filter chain...");
