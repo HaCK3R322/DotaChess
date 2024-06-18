@@ -8,7 +8,7 @@ spring:
   datasource:
     url: jdbc:postgresql://192.168.0.131:5432/dotachess
     username: postgres
-    password: 1234
+    password: intmain321890
   jpa:
     database: POSTGRESQL
     show-sql: true
@@ -20,5 +20,7 @@ spring:
           hibernate:
             dialect: PostgreSQLDialect
 
-jwt:
-  secret: "lol xddd"
+management:
+  private-user:
+    login: private_user
+    password: password

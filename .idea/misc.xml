@@ -7,10 +7,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/feign-client-starter/pom.xml" />
         <option value="$PROJECT_DIR$/dotachess-core/pom.xml" />
+        <option value="$PROJECT_DIR$/dotachess-api/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/jwt-security-starter/pom.xml" />
         <option value="$PROJECT_DIR$/test/pom.xml" />
       </set>
     </option>

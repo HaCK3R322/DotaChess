@@ -7,7 +7,4 @@
   <packaging>pom</packaging>
   <name>Archetype - DotaChess</name>
   <url>http://maven.apache.org</url>
-  <modules>
-    <module>jwt-security-starter</module>
-  </modules>
 </project>

@@ -5,33 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37432daf-64e2-40f5-adee-1a39fc924539" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-core/src/main/java/ru/androsov/dotachesscore/configurations/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-core/src/main/java/ru/androsov/dotachesscore/configurations/security/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-core/src/main/java/ru/androsov/dotachesscore/configurations/security/UserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-core/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-client-starter/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-security-starter/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-security-starter/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-security-starter/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-security-starter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-security-starter/src/main/java/ru/androsov/jwt_security_starter/JwtFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-security-starter/src/main/java/ru/androsov/jwt_security_starter/JwtSecurityAutoConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-security-starter/src/main/java/ru/androsov/jwt_security_starter/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-security-starter/src/main/java/ru/androsov/jwt_security_starter/UserDetailsExtended.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-security-starter/src/main/java/ru/androsov/jwt_security_starter/UserDetailsExtendedService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-security-starter/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-core/src/main/java/ru/androsov/dotachesscore/configurations/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-core/src/main/java/ru/androsov/dotachesscore/configurations/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-core/src/main/java/ru/androsov/dotachesscore/controllers/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-core/src/main/java/ru/androsov/dotachesscore/controllers/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-core/src/main/java/ru/androsov/dotachesscore/services/JwtService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-core/src/main/java/ru/androsov/dotachesscore/services/UserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-core/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-core/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt-security-starter/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt-security-starter/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt-security-starter/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt-security-starter/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt-security-starter/src/main/java/ru/androsov/jwt_security_starter/JwtFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt-security-starter/src/main/java/ru/androsov/jwt_security_starter/JwtSecurityAutoConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt-security-starter/src/main/java/ru/androsov/jwt_security_starter/JwtService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt-security-starter/src/main/java/ru/androsov/jwt_security_starter/UserDetailsExtended.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt-security-starter/src/main/java/ru/androsov/jwt_security_starter/UserDetailsExtendedService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwt-security-starter/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +40,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="jwt-security-auto-config" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HaCK3R322&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HaCK3R322/DotaChess.git&quot;,
+    &quot;accountId&quot;: &quot;2edc4bca-d362-424f-a485-29840ce9c7e9&quot;
+  }
+}</component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
@@ -60,40 +70,40 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.dotachess-core [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.dotachess-core [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.dotachess-core [deploy].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.dotachess-core [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.feign-client-starter [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.feign-client-starter [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.jwt-security-starter [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.jwt-security-starter [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.jwt-security-starter [package].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.DotachessCoreApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.FeignClientStarterApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-22&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/dictator_zx/IdeaProjects/DotaChess/jwt-security-starter/src/main/resources/META-INF/spring&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.dotachess-core [clean].executor": "Run",
+    "Maven.dotachess-core [compile].executor": "Run",
+    "Maven.dotachess-core [deploy].executor": "Run",
+    "Maven.dotachess-core [install].executor": "Run",
+    "Maven.feign-client-starter [clean].executor": "Run",
+    "Maven.feign-client-starter [install].executor": "Run",
+    "Maven.jwt-security-starter [clean].executor": "Run",
+    "Maven.jwt-security-starter [install].executor": "Run",
+    "Maven.jwt-security-starter [package].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.DotachessCoreApplication.executor": "Run",
+    "Spring Boot.FeignClientStarterApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "openjdk-22",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/dictator_zx/Downloads/Diplom/Diplom",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/jwt-security-starter/src/main/resources/META-INF/spring" />
@@ -116,6 +126,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DotachessCoreApplication">
+    <configuration name="DotachessApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="dotachess-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.androsov.dotachessapi.DotachessApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DotachessCoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="dotachess-core" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.androsov.dotachesscore.DotachessCoreApplication" />
@@ -149,10 +166,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.DotachessApiApplication" />
+      <item itemvalue="Spring Boot.JwtSecurityStarterApplication" />
+      <item itemvalue="Spring Boot.DotachessCoreApplication" />
+      <item itemvalue="Spring Boot.FeignClientStarterApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.DotachessCoreApplication" />
         <item itemvalue="Spring Boot.FeignClientStarterApplication" />
+        <item itemvalue="Spring Boot.FeignClientStarterApplication" />
+        <item itemvalue="Spring Boot.DotachessCoreApplication" />
+        <item itemvalue="Spring Boot.DotachessCoreApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -178,10 +204,25 @@
       <workItem from="1718449123140" duration="2387000" />
       <workItem from="1718536632124" duration="4215000" />
       <workItem from="1718623593054" duration="637000" />
+      <workItem from="1718625180280" duration="12831000" />
+      <workItem from="1718698185015" duration="1700000" />
     </task>
+    <task id="LOCAL-00001" summary="Init commit?">
+      <option name="closed" value="true" />
+      <created>1718625223173</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718625223173</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init commit?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init commit?" />
   </component>
 </project>
