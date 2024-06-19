@@ -21,7 +21,7 @@ public class FeignClientConfiguration {
     @ConditionalOnProperty({"feign.dotachess-auth.url", "feign.dotachess-auth.login", "feign.dotachess-auth.password"})
     public static class AuthServiceConfiguration {
         @Bean
-        public AuthServiceApi authServiceClient(
+        public AuthServiceApi authServiceApiClient(
                 @Value("${feign.dotachess-auth.url}") String url,
                 @Value("${feign.dotachess-auth.login}") String login,
                 @Value("${feign.dotachess-auth.password}") String password,

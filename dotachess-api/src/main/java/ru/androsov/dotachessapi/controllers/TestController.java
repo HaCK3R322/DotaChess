@@ -16,7 +16,6 @@ public class TestController {
 
     @GetMapping(path = "/api/public/hello-auth")
     public String publicMethod() {
-        log.info("/api/public/hello-auth");
         return testService.getHelloFromAuthService();
     }
 }

@@ -29,11 +29,11 @@ import java.util.List;
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class SecurityConfiguration {
-    private static final String PRIVATE_USER_ROLE = "PRIVATE";
+    private final JwtFilter jwtFilter;
 
+    private static final String PRIVATE_USER_ROLE = "PRIVATE";
     @Value("${management.private-user.login}")
     private String privateUserLogin;
-
     @Value("${management.private-user.password}")
     private String privateUserPassword;
 
@@ -48,7 +48,7 @@ public class SecurityConfiguration {
                         .requestMatchers("/api/public/**").permitAll()
                 )
                 .httpBasic(Customizer.withDefaults())
-//                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
+                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
 //                .exceptionHandling(e -> e.authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.FORBIDDEN)))
                 .build();
     }
