@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: dotachess-auth
+
+  datasource:
+    url: jdbc:postgresql://localhost:5001/postgres
+    username: postgres
+    password: password
+
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+
+management:
+  private-user:
+    login: private_auth
+    password: password
+
+#
+#logging:
+#  level:
+#    root: debug

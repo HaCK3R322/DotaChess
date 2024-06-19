@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   application:
@@ -9,6 +9,7 @@ spring:
     url: jdbc:postgresql://192.168.0.131:5432/dotachess
     username: postgres
     password: intmain321890
+
   jpa:
     database: POSTGRESQL
     show-sql: true

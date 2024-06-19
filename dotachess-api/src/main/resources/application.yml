@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: dotachess-api
+
+management:
+  private-user:
+    login: private_api
+    password: password
+
+feign:
+  dotachess-auth:
+    url: http://localhost:8081
+    login: private_auth
+    password: password
+
+#logging:
+#  level:
+#    root: debug

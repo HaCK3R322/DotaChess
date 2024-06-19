@@ -1,0 +1,38 @@
+version: '3.8'
+
+name: dotachess
+
+volumes:
+  dotachess-users-db-volume:
+  dotachess-api-db-volume:
+  dotachess-core-db-volume:
+
+networks:
+  podman-network:
+
+services:
+  users-db:
+    image: docker.io/library/postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - dotachess-users-db-volume:/var/lib/postgresql/data
+    ports:
+      - "5001:5432"
+
+#  auth-service:
+#    depends_on:
+#      - users-db
+#    build:
+#      context: ./dotachess-auth
+#      dockerfile: Dockerfile
+#    ports:
+#      - "8081:8081"
+#
+#  api-service:
+#    build:
+#      context: ./dotachess-api
+#      dockerfile: Dockerfile
+#    ports:
+#      - "8080:8080"
