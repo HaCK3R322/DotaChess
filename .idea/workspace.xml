@@ -4,33 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37432daf-64e2-40f5-adee-1a39fc924539" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-api/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/configuration/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/configuration/filters/JwtFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/controllers/PodmanTestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/controllers/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/services/TestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-api/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-auth/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-auth/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-auth/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-auth/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-auth/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/DotachessAuthApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/configuration/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/controllers/JwtPrivateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/controllers/PrivateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/FeignClientConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/AuthServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="37432daf-64e2-40f5-adee-1a39fc924539" name="Changes" comment="Feign">
+      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/services/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/AuthServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/model/UserInfoDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dotachess-core/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-core/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-client-starter/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" afterPath="$PROJECT_DIR$/feign-client-starter/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/controllers/PodmanTestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/services/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/services/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/controllers/JwtPrivateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/controllers/JwtPrivateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/controllers/PrivateController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/FeignClientConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/FeignClientConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/AuthServiceClient.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,7 +279,7 @@
       <workItem from="1718720551038" duration="1934000" />
       <workItem from="1718724302767" duration="123000" />
       <workItem from="1718724442697" duration="5990000" />
-      <workItem from="1718768893432" duration="4879000" />
+      <workItem from="1718768893432" duration="5954000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit?">
       <option name="closed" value="true" />
@@ -304,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718625223173</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Feign">
+      <option name="closed" value="true" />
+      <created>1718773807326</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718773807326</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +317,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit?" />
+    <MESSAGE value="Feign" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feign" />
   </component>
 </project>
