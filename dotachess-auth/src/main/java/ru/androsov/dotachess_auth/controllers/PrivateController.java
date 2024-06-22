@@ -1,10 +1,7 @@
 package ru.androsov.dotachess_auth.controllers;
 
-import feign.Response;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 import ru.androsov.dotachess_auth.model.entities.UserEntity;
 import ru.androsov.dotachess_auth.services.JwtService;
@@ -19,7 +16,7 @@ import ru.androsov.rest.response.RestResponse;
 @RestController
 @CrossOrigin
 @RequiredArgsConstructor
-public class JwtPrivateController implements AuthServicePrivateApi {
+public class PrivateController implements AuthServicePrivateApi {
     private final JwtService jwtService;
     private final UserService userService;
 
