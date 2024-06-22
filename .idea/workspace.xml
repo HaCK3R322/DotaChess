@@ -4,43 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37432daf-64e2-40f5-adee-1a39fc924539" name="Changes" comment="Started jwt authentication development">
-      <change afterPath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/controllers/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/model/JwtPayload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/model/entities/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/model/responses/ExceptionResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/AuthServicePrivateApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/model/JwtTokenDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/model/RegistrationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-client-starter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/RestClientStarterAutoConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/response/RestResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/response/component/RestError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/response/component/RestPagination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/throwable/exception/BadRequestException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/throwable/exception/CalledServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/throwable/exception/CalledServiceUnavailableException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/throwable/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/throwable/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/resources/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="37432daf-64e2-40f5-adee-1a39fc924539" name="Changes" comment="Rest client starter, jwt and something else">
+      <change afterPath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/DotachessApiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/configuration/FiltersConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/configuration/FiltersConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/configuration/filters/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/configuration/filters/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/controllers/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/services/TestService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dotachess-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-auth/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/DotachessAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/DotachessAuthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/configuration/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/controllers/JwtPrivateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/controllers/JwtPrivateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/services/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/services/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dotachess-auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-auth/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/FeignClientConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/FeignClientConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/AuthServiceApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/model/UserInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/model/UserInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/RestClientStarterAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/RestClientGlobalExceptionHandlerAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/throwable/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/throwable/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-client-starter/src/main/resources/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +105,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "reference.settingsDialog.application.dockerMachine",
     "vue.rearranger.settings.migration": "true"
@@ -147,6 +120,7 @@
       <recent name="$PROJECT_DIR$/jwt-security-starter" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rest-client-starter/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/feign-client-starter/src/main/resources/META-INF/spring" />
     </key>
@@ -310,7 +284,7 @@
       <workItem from="1718724442697" duration="5990000" />
       <workItem from="1718768893432" duration="6737000" />
       <workItem from="1718787253413" duration="2388000" />
-      <workItem from="1719066820601" duration="10622000" />
+      <workItem from="1719066820601" duration="14046000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit?">
       <option name="closed" value="true" />
@@ -344,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718775564051</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Rest client starter, jwt and something else">
+      <option name="closed" value="true" />
+      <created>1719077558434</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719077558434</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,6 +349,7 @@
     <MESSAGE value="Feign" />
     <MESSAGE value="Some naming twists" />
     <MESSAGE value="Started jwt authentication development" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started jwt authentication development" />
+    <MESSAGE value="Rest client starter, jwt and something else" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rest client starter, jwt and something else" />
   </component>
 </project>
