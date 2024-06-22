@@ -1,11 +1,9 @@
 package ru.androsov.feignclientstarter.dotachess.auth.model;
 
-import lombok.Builder;
 import lombok.Data;
 
 @Data
-@Builder
-public class UserInfoDto {
-    private Long id;
+public class RegistrationRequest {
     private String username;
+    private String password;
 }

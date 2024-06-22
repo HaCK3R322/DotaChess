@@ -12,7 +12,7 @@ import org.springframework.cloud.openfeign.support.SpringEncoder;
 import org.springframework.cloud.openfeign.support.SpringMvcContract;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import ru.androsov.feignclientstarter.dotachess.auth.AuthServiceApi;
+import ru.androsov.feignclientstarter.dotachess.auth.AuthServicePrivateApi;
 
 @Slf4j
 @Configuration
@@ -21,7 +21,7 @@ public class FeignClientConfiguration {
     @ConditionalOnProperty({"feign.dotachess-auth.url", "feign.dotachess-auth.login", "feign.dotachess-auth.password"})
     public static class AuthServiceConfiguration {
         @Bean
-        public AuthServiceApi authServiceApiClient(
+        public AuthServicePrivateApi authServiceApiClient(
                 @Value("${feign.dotachess-auth.url}") String url,
                 @Value("${feign.dotachess-auth.login}") String login,
                 @Value("${feign.dotachess-auth.password}") String password,
@@ -34,7 +34,7 @@ public class FeignClientConfiguration {
                     .encoder(new SpringEncoder(messageConverters))
                     .decoder(new SpringDecoder(messageConverters))
                     .requestInterceptor(new BasicAuthRequestInterceptor(login, password))
-                    .target(AuthServiceApi.class, url);
+                    .target(AuthServicePrivateApi.class, url);
         }
     }
 }

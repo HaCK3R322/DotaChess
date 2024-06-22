@@ -6,9 +6,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
-import ru.androsov.feignclientstarter.dotachess.auth.AuthServiceApi;
+import ru.androsov.feignclientstarter.dotachess.auth.AuthServicePrivateApi;
 
 import java.io.IOException;
 
@@ -16,15 +15,16 @@ import java.io.IOException;
 @RequiredArgsConstructor
 public class JwtFilter extends OncePerRequestFilter {
     private final static String AUTHORIZATION_HEADER = "Authorization";
-    private final AuthServiceApi authService;
+    private final AuthServicePrivateApi authService;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        if(request.getHeader(AUTHORIZATION_HEADER) != null) {
-            log.info("PSEUDO JWT FILTER INTERCEPTION");
-        } else {
-            log.info("NO JWT FOUND!");
-        }
+        boolean isHeaderPresent = request.getHeader(AUTHORIZATION_HEADER) != null;
+
+        if(!isHeaderPresent) filterChain.doFilter(request, response);
+
+        // try some shit))
+        log.info(request.getHeader(AUTHORIZATION_HEADER));
 
         filterChain.doFilter(request, response);
     }

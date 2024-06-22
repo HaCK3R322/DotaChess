@@ -1,21 +1,39 @@
 package ru.androsov.dotachess_auth.controllers;
 
+import feign.Response;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
-import ru.androsov.feignclientstarter.dotachess.auth.AuthServiceApi;
+import ru.androsov.dotachess_auth.model.entities.UserEntity;
+import ru.androsov.dotachess_auth.services.JwtService;
+import ru.androsov.dotachess_auth.services.UserService;
+import ru.androsov.feignclientstarter.dotachess.auth.AuthServicePrivateApi;
+import ru.androsov.feignclientstarter.dotachess.auth.model.RegistrationRequest;
+import ru.androsov.feignclientstarter.dotachess.auth.model.JwtTokenDto;
 import ru.androsov.feignclientstarter.dotachess.auth.model.UserInfoDto;
+import ru.androsov.rest.response.RestResponse;
 
 @Slf4j
 @RestController
 @CrossOrigin
-public class JwtPrivateController implements AuthServiceApi {
+@RequiredArgsConstructor
+public class JwtPrivateController implements AuthServicePrivateApi {
+    private final JwtService jwtService;
+    private final UserService userService;
 
-    @Override
-    public UserInfoDto getUserDetails() {
-        UserInfoDto userInfoDto = new UserInfoDto();
-        userInfoDto.setId(1L);
-        userInfoDto.setUsername("dictator_zx_mock");
+    @PostMapping("/api/private/register")
+    public RestResponse<JwtTokenDto> register(@RequestBody RegistrationRequest request) {
+        UserEntity user = userService.createUser(request);
+        String token = jwtService.generateToken(user.getId());
+        JwtTokenDto jwtTokenDto = new JwtTokenDto(token);
 
-        return userInfoDto;
+        return RestResponse.success(jwtTokenDto);
+    }
+
+    @PostMapping("/api/private/get-user-details")
+    public RestResponse<UserInfoDto> authenticate(JwtTokenDto token) {
+        return RestResponse.success(jwtService.parse(token.getToken()));
     }
 }

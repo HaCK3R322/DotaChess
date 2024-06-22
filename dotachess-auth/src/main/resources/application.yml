@@ -21,6 +21,9 @@ management:
     login: private_auth
     password: password
 
+jwt:
+  secret: "THIS IS VERY SECRET!!!!lj;akgsvdvaldfhilsawdvpibpaJDK"
+
 #
 #logging:
 #  level:

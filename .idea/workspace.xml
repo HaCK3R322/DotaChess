@@ -4,11 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37432daf-64e2-40f5-adee-1a39fc924539" name="Changes" comment="Some naming twists">
-      <change afterPath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/configuration/FiltersConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/configuration/SecurityConfiguration.java" afterDir="false" />
+    <list default="true" id="37432daf-64e2-40f5-adee-1a39fc924539" name="Changes" comment="Started jwt authentication development">
+      <change afterPath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/controllers/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/model/JwtPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/model/entities/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/model/responses/ExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/AuthServicePrivateApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/model/JwtTokenDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/model/RegistrationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-client-starter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/RestClientStarterAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/response/RestResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/response/component/RestError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/response/component/RestPagination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/throwable/exception/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/throwable/exception/CalledServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/throwable/exception/CalledServiceUnavailableException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/throwable/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/java/ru/androsov/rest/throwable/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-client-starter/src/main/resources/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/configuration/FiltersConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/configuration/FiltersConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/configuration/filters/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/configuration/filters/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/controllers/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-api/src/main/java/ru/androsov/dotachessapi/services/TestService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/DotachessAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/DotachessAuthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/configuration/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/controllers/JwtPrivateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/controllers/JwtPrivateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/services/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-auth/src/main/java/ru/androsov/dotachess_auth/services/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotachess-auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dotachess-auth/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/FeignClientConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/FeignClientConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/AuthServiceApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/model/UserInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign-client-starter/src/main/java/ru/androsov/feignclientstarter/dotachess/auth/model/UserInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +127,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "openjdk-22",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/dictator_zx/IdeaProjects/DotaChess/dotachess-auth",
+    "last_opened_file_path": "/home/dictator_zx/IdeaProjects/DotaChess/rest-client-starter/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,6 +140,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rest-client-starter/src/main/resources" />
+      <recent name="$PROJECT_DIR$/rest-client-starter" />
       <recent name="$PROJECT_DIR$/dotachess-auth" />
       <recent name="$PROJECT_DIR$/jwt-security-starter/src/main/resources/META-INF/spring" />
       <recent name="$PROJECT_DIR$/jwt-security-starter" />
@@ -144,9 +178,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JwtSecurityStarterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="jwt-security-starter" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.androsov.jwt_security_starter.JwtSecurityStarterApplication" />
+    <configuration name="DotachessCoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="dotachess-core" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.androsov.dotachesscore.DotachessCoreApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,7 +201,9 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
-      <deployment type="docker-image" />
+      <deployment type="docker-image">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
@@ -229,9 +265,9 @@
       <item itemvalue="Docker.compose.yaml.users-db: Compose Deployment" />
       <item itemvalue="Docker.compose.yaml: Compose Deployment" />
       <item itemvalue="Docker.compose.yaml.api-service: Compose Deployment" />
+      <item itemvalue="Spring Boot.DotachessCoreApplication" />
       <item itemvalue="Spring Boot.DotachessAuthApplication" />
       <item itemvalue="Spring Boot.DotachessApiApplication" />
-      <item itemvalue="Spring Boot.JwtSecurityStarterApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -272,7 +308,9 @@
       <workItem from="1718720551038" duration="1934000" />
       <workItem from="1718724302767" duration="123000" />
       <workItem from="1718724442697" duration="5990000" />
-      <workItem from="1718768893432" duration="6483000" />
+      <workItem from="1718768893432" duration="6737000" />
+      <workItem from="1718787253413" duration="2388000" />
+      <workItem from="1719066820601" duration="10622000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit?">
       <option name="closed" value="true" />
@@ -298,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718774886443</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Started jwt authentication development">
+      <option name="closed" value="true" />
+      <created>1718775564051</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718775564051</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +366,7 @@
     <MESSAGE value="Init commit?" />
     <MESSAGE value="Feign" />
     <MESSAGE value="Some naming twists" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some naming twists" />
+    <MESSAGE value="Started jwt authentication development" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started jwt authentication development" />
   </component>
 </project>

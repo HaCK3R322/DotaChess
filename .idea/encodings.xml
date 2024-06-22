@@ -8,6 +8,10 @@
     <file url="file://$PROJECT_DIR$/feign-client-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jwt-security-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jwt-security-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest-client-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest-client-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest-response-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest-response-starter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test/src/main/java" charset="UTF-8" />

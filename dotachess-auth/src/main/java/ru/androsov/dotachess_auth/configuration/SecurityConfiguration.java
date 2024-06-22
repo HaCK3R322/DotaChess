@@ -37,10 +37,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class SecurityConfiguration {
     private static final String PRIVATE_USER_ROLE = "PRIVATE";
-
     @Value("${management.private-user.login}")
     private String privateUserLogin;
-
     @Value("${management.private-user.password}")
     private String privateUserPassword;
 
@@ -78,7 +76,8 @@ public class SecurityConfiguration {
         return source;
     }
 
-    private PasswordEncoder passwordEncoder() {
+    @Bean
+    public PasswordEncoder passwordEncoder() {
         return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
 }

@@ -8,6 +8,7 @@
   <name>Archetype - DotaChess</name>
   <url>http://maven.apache.org</url>
     <modules>
-        <module>dotachess-auth</module>
+      <module>dotachess-auth</module>
+      <module>rest-client-starter</module>
     </modules>
 </project>
